@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <script>
+
+        var  nome = prompt('Digite o nome de uma pessoa');
+        var altura = prompt('Informe a altura dessa pessoa (em cm)');
+        var peso = prompt('Informe o peso dessa pessoas');
+
+        altura = parseFloat(altura/100);
+        peso = parseFloat(peso);
+
+        var M = peso/(altura*altura);
+        console.log(M);
+
+        var classificacao;
+
+        if (M < 16) {
+            classificacao = 'Baixo peso, muito grave'
+
+        } else if (M >= 16 && M < 17) {
+            classificacao = 'Baixo peso, grave'
+
+        } else if (M >= 17 && M < 18.50) {
+            classificacao = 'Baixo peso'
+
+        }  else if (M >= 18,50 && M < 24.50) {
+            classificacao = 'Peso normal'
+            
+        }  else if (M >= 25 && M < 30) {
+            classificacao = 'Sobrepeso'
+            
+        }  else if (M >= 30 && M < 35) {
+            classificacao = 'Obesidade grau 1'
+
+        }  else if (M >= 35 && M < 40) {
+            classificacao = 'Obesidade grau 2'
+            
+        }  else if (M > 40) {
+            classificacao = 'Obesidade grau 3'
+            
+        }
+
+        document.write(nome + ' possui índice de massa corporal igual a ' + M + ' sendo classificado como: ' + classificacao)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

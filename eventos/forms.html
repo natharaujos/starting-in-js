@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos: Formulários</title>
+    <script>
+
+        //onfocus
+        //onblur
+        //onchange
+
+    </script>
+</head>
+<body>
+    <h1>onfocus</h1>
+    <input onfocus="console.log('Escreva na caixa de texto')" type="text">
+    <br>
+    <h1>onblur</h1>
+    <input onblur="console.log('O elemento perdeu o foco')" type="text">
+    <br>
+    <h1>onchange</h1>
+    <select onchange="console.log('Estado foi modificado')">
+        <option>----Selecione----</option>
+        <option value="1">Primeira Opção</option>
+        <option value="2">Segunda Opção</option>
+    </select>
+    <br>
+    <p><strong>look at the console to see the actions been registered</strong></p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos: Mouse</title>
+    <script>
+        
+        //onclick
+        function acao() {
+            alert('Evento disparado')
+        }
+
+        //ondblclick
+        function doubleClick() {
+            alert('Double click detectado')
+        }
+        
+        //onmouseup
+        function mouseUp() {
+            alert('Solta esse mouse meu fi')
+        }
+
+        //onmousehover
+        function mouseHover() {
+            alert('Passou o mouse em cima né?')
+        }
+
+        //onmouseout
+        function mouseOut() {
+            alert('Sai de mim')
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Mouse Click</h1>
+    <div onclick="acao()" style="background-color: gray; height: 150px; width: 150px;"></div>
+    <br>
+    <h1>Mouse Double Cick</h1>
+    <div ondblclick="doubleClick()" style="background-color: gray; height: 150px; width: 150px;"></div>
+    <br>
+    <h1>Mouse Up</h1>
+    <div onmouseup="mouseUp()" style="background-color: gray; height: 150px; width: 150px;"></div>
+    <br>
+    <h1>Mouse Hover</h1>
+    <div onmouseover="mouseHover()" style="background-color: gray; height: 150px; width: 150px;"></div>
+    <br>
+    <h1>Mouse Out</h1>
+    <div onmouseout="mouseOut()" style="background-color: gray; height: 150px; width: 150px;"></div>
+</body>
+</html>

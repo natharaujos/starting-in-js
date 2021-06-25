@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Operators</title>
+    <script>
+
+        /*
+        // true && true && false = false
+        if (2 == 2 && 3 >= 1 && 'a' == 'b') {
+            document.write(' Verdadeiro ')
+        } else {
+            document.write(' Falso ')
+        }
+
+        // true || true || false = true
+        if (2 == 2 || 3 >= 1 || 'a' == 'b') {
+            document.write(' Verdadeiro ')
+        } else {
+            document.write(' Falso ')
+        }
+
+        // ! inverte o valor da expressão
+        if (!(5 >= 2)) {
+            document.write(' Verdadeiro ')
+        } else {
+            document.write(' Falso ')
+        }
+        */
+
+        
+        var nota = prompt('Digite a nota do aluno:')
+        var faltas = prompt('Digite a quantidade de faltas')
+        var media = 7;
+        var faltas_maximas = 15;
+
+        /*
+        if (nota >= media && faltas <= faltas_maximas) {
+            document.write('Aprovado')
+        } else {
+            document.write('Reprovado')
+        }
+        */
+
+        // operador ternário
+        var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado' : 'Reprovado'
+        document.write(resultado)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

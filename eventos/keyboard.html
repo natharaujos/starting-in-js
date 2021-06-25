@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos: Teclado</title>
+    <script>
+
+        //onkeydown
+        function acao1() {
+            alert('apertou o tecladin né')
+        }
+
+        //onkeypress
+        function acao2() {
+            alert('pressionou o tecladin né')
+        }
+
+        //onkeyup
+        function acao3() {
+            alert('soltou o tecladin né')
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Key down</h1>
+    <input onkeydown="acao1()" type="text">
+    <br>
+    <h1>Key press</h1>
+    <input onkeypress="acao2()" type="text">
+    <br>
+    <h1>Key up</h1>
+    <input onkeyup="acao3()" type="text">
+    <br>
+</body>
+</html>
